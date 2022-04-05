@@ -1,0 +1,349 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Audio Samples</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+</head>
+
+<!--<link href="./audio/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<body>
+  <div class="container">
+    <div class="jumbotron mt-3">
+      <h2>VQTTS: High-Fidelity Text-to-Speech Synthesis with Self-Supervised VQ Acoustic Feature</h2>
+      <p class="lead">Chenpeng Du, Yiwei Guo, Xie Chen, Kai Yu</p>
+<!--      <a class="btn btn-lg btn-primary" href="../components/navbar/" role="button">View navbar docs »</a>-->
+    </div>
+	
+	<p>This page is the demo of audio samples for our <a href="https://arxiv.org/abs/2204.00768">Paper</a>. Note that we downsample the LJSpeech to 16k in this work for simplicity.</p>
+    
+	<h3>Part I: Speech Reconstruction</h3>
+		<table class="table">
+		<tr><td scope="col" colspan="4"></th></tr>
+		<tr>
+			<td align="center">Recording</td>
+			<td><audio src="./audio/gt/LJ050-0136.wav" controls=""></audio></td>
+			<td align="center">GT Mel + HifiGAN</td>
+			<td><audio src="./audio/hifigan/LJ050-0136.wav" controls=""></audio></td>
+		</tr>
+		<tr>
+			<td align="center">GT VQ&pros + HifiGAN</td>
+			<td><audio src="./audio/vqw2v_hifigan/LJ050-0136.wav" controls=""></audio></td>
+			<td align="center">GT VQ&pros + vec2wav</td>
+			<td><audio src="./audio/vqw2v_v2w_hifigan/LJ050-0136.wav" controls=""></audio></td>
+		</tr>
+		
+		<tr><td scope="col" colspan="4"></th></tr>
+		<tr>
+			<td align="center">Recording</td>
+			<td><audio src="./audio/gt/LJ050-0143.wav" controls=""></audio></td>
+			<td align="center">GT Mel + HifiGAN</td>
+			<td><audio src="./audio/hifigan/LJ050-0143.wav" controls=""></audio></td>
+		</tr>
+		<tr>
+			<td align="center">GT VQ&pros + HifiGAN</td>
+			<td><audio src="./audio/vqw2v_hifigan/LJ050-0143.wav" controls=""></audio></td>
+			<td align="center">GT VQ&pros + vec2wav</td>
+			<td><audio src="./audio/vqw2v_v2w_hifigan/LJ050-0143.wav" controls=""></audio></td>
+		</tr>
+		
+		<tr><td scope="col" colspan="4"></th></tr>
+		<tr>
+			<td align="center">Recording</td>
+			<td><audio src="./audio/gt/LJ050-0144.wav" controls=""></audio></td>
+			<td align="center">GT Mel + HifiGAN</td>
+			<td><audio src="./audio/hifigan/LJ050-0144.wav" controls=""></audio></td>
+		</tr>
+		<tr>
+			<td align="center">GT VQ&pros + HifiGAN</td>
+			<td><audio src="./audio/vqw2v_hifigan/LJ050-0144.wav" controls=""></audio></td>
+			<td align="center">GT VQ&pros + vec2wav</td>
+			<td><audio src="./audio/vqw2v_v2w_hifigan/LJ050-0144.wav" controls=""></audio></td>
+		</tr>
+		
+		<tr><td scope="col" colspan="4"></th></tr>
+		<tr>
+			<td align="center">Recording</td>
+			<td><audio src="./audio/gt/LJ050-0147.wav" controls=""></audio></td>
+			<td align="center">GT Mel + HifiGAN</td>
+			<td><audio src="./audio/hifigan/LJ050-0147.wav" controls=""></audio></td>
+		</tr>
+		<tr>
+			<td align="center">GT VQ&pros + HifiGAN</td>
+			<td><audio src="./audio/vqw2v_hifigan/LJ050-0147.wav" controls=""></audio></td>
+			<td align="center">GT VQ&pros + vec2wav</td>
+			<td><audio src="./audio/vqw2v_v2w_hifigan/LJ050-0147.wav" controls=""></audio></td>
+		</tr>
+		
+		<tr><td scope="col" colspan="4"></th></tr>
+		<tr>
+			<td align="center">Recording</td>
+			<td><audio src="./audio/gt/LJ050-0224.wav" controls=""></audio></td>
+			<td align="center">GT Mel + HifiGAN</td>
+			<td><audio src="./audio/hifigan/LJ050-0224.wav" controls=""></audio></td>
+		</tr>
+		<tr>
+			<td align="center">GT VQ&pros + HifiGAN</td>
+			<td><audio src="./audio/vqw2v_hifigan/LJ050-0224.wav" controls=""></audio></td>
+			<td align="center">GT VQ&pros + vec2wav</td>
+			<td><audio src="./audio/vqw2v_v2w_hifigan/LJ050-0224.wav" controls=""></audio></td>
+		</tr>
+		
+
+	</table>
+	
+	<h3>Part II: Text-to-speech Synthesis</h3>
+	<table class="table">
+			<tr><td scope="col" colspan="3">with the particular purposes of the agency involved. the commission recognizes that this is a controversial area</th></tr>
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0168.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0168.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0168.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0168.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0168.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0168.wav" controls=""></audio></td>
+			</tr>
+			
+			
+			<tr><td scope="col" colspan="3">this matter is obviously beyond the jurisdiction of the commission,</th></tr>
+			
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0170.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0170.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0170.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0170.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0170.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0170.wav" controls=""></audio></td>
+			</tr>
+			
+			<tr><td scope="col" colspan="3">the commission regards this as a most useful innovation and urges that the practice be continued.</th></tr>
+			
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0181.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0181.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0181.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0181.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0181.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0181.wav" controls=""></audio></td>
+			</tr>
+			
+			<!-- 
+			<tr><td scope="col" colspan="3">the secret service has now presented its recommendations to the bureau of the budget. the plan proposed by the service</th></tr>
+
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0221.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0221.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0221.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0221.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0221.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0221.wav" controls=""></audio></td>
+			</tr>	
+ -->
+
+			
+			<tr><td scope="col" colspan="3">this no longer appears to be the case.</th></tr>
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0255.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0255.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0255.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0255.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0255.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0255.wav" controls=""></audio></td>
+			</tr>
+			
+			
+			
+			<tr><td scope="col" colspan="3">the secret service has been receiving full cooperation in scientific research and technological development</th></tr>
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0260.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0260.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0260.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0260.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0260.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0260.wav" controls=""></audio></td>
+			</tr>
+			
+			
+			
+			
+			<tr><td scope="col" colspan="3">even if the manpower and technological resources of the secret service are adequately augmented,</th></tr>
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0262.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0262.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0262.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0262.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0262.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0262.wav" controls=""></audio></td>
+			</tr>
+			
+			
+			
+			
+			<tr><td scope="col" colspan="3">the commission recommends that the present arrangements</th></tr>
+			<tr>
+				<td align="center">Recording</td>
+				<td align="center">Tacotron 2</td>
+				<td align="center">FastSpeech 2</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/gt/LJ050-0264.wav" controls=""></audio></td>
+				<td><audio src="./audio/tacotron/LJ050-0264.wav" controls=""></audio></td>
+				<td><audio src="./audio/fs2/LJ050-0264.wav" controls=""></audio></td>
+			</tr>
+			<tr>
+				<td align="center">GlowTTS</td>
+				<td align="center">VITS</td>
+				<td align="center">VQTTS</td>
+			</tr>
+			<tr>
+				<td><audio src="./audio/glowtts/LJ050-0264.wav" controls=""></audio></td>
+				<td><audio src="./audio/vits/LJ050-0264.wav" controls=""></audio></td>
+				<td><audio src="./audio/t2v/LJ050-0264.wav" controls=""></audio></td>
+			</tr>
+	</table>
+
+    <h3>Part III: Prosody diversity in PL prosody hypotheses</h3>
+	<table class="table">
+		<tr><td scope="col" colspan="3">county, and state law enforcement agencies in their districts.</th></tr>
+		<tr>
+			<td align="center">Prosody 1</td>
+			<td align="center">Prosody 2</td>
+			<td align="center">Prosody 3</td>
+		</tr>
+		<tr>
+			<td><audio src="./audio/t2v_diversity/LJ050-0143_0.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0143_4.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0143_2.wav" controls=""></audio></td>
+		</tr>
+		
+		<tr><td scope="col" colspan="3">secret service personnel and facilities</th></tr>
+		<tr>
+			<td align="center">Prosody 1</td>
+			<td align="center">Prosody 2</td>
+			<td align="center">Prosody 3</td>
+		</tr>
+		<tr>
+			<td><audio src="./audio/t2v_diversity/LJ050-0204_0.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0204_4.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0204_5.wav" controls=""></audio></td>
+		</tr>
+		
+				
+		<tr><td scope="col" colspan="3">the assistance of trained federal law enforcement officers.</th></tr>
+		<tr>
+			<td align="center">Prosody 1</td>
+			<td align="center">Prosody 2</td>
+			<td align="center">Prosody 3</td>
+		</tr>
+		<tr>
+			<td><audio src="./audio/t2v_diversity/LJ050-0244_0.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0244_5.wav" controls=""></audio></td>
+			<td><audio src="./audio/t2v_diversity/LJ050-0244_3.wav" controls=""></audio></td>
+		</tr>
+	</table>
+  </div>
+  
+<!--  <script src="./bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+</body>
